@@ -18,7 +18,7 @@ class CommissionCalculatorTest {
 
     @Test
     fun `mastercard below minimum amount`() {
-        assertEquals(123.6, calc("MASTERCARD", 100.0), delta) // 100*0.006 + 20
+        assertEquals(20.6, calc("MASTERCARD", 100.0), delta) // 100*0.006 + 20
         assertEquals(21.8, calc("MASTERCARD", 300.0, 76000.0), delta) // 300*0.006 + 20
     }
 
